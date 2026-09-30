@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +29,7 @@
 
     <main>
 
+        <!-- Hero Section -->
         <section class="hero">
             <h1>Hi, I'm Mark Young.</h1>
 
@@ -41,59 +43,281 @@
             <div class="hero-buttons">
                 <a href="#projects">View My Work</a>
 
-                <a href="https://github.com/mark011062" target="_blank">
+                <a
+                    href="https://github.com/mark011062"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     GitHub
                 </a>
             </div>
         </section>
 
 
+        <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
 
             <p>
                 I'm a data professional with experience in analytics,
                 automation, data quality, and team leadership. My work
-                includes SQL, Python, Power BI, Excel, and database-driven
-                applications.
+                includes SQL, Python, Power BI, Excel, data engineering,
+                and database-driven applications.
             </p>
 
             <p>
                 I'm especially interested in using data and technology to
-                solve meaningful problems, including work in criminal justice
-                and animal welfare.
+                solve meaningful problems, including work in criminal justice,
+                education, and animal welfare.
             </p>
         </section>
 
 
+        <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
 
+
+            <!-- Shelter Return Analysis -->
             <div class="project-card">
+
                 <h3>Shelter Return Analysis</h3>
 
                 <p>
-                    An analysis of animal shelter adoption and return data
-                    designed to identify patterns associated with animals
-                    returning to shelters after adoption.
+                    An analysis of 84,143 Austin Animal Center adoption events
+                    examining factors associated with animals returning to the
+                    shelter within 30 days of adoption.
+                </p>
+
+                <p>
+                    The analysis identified a 6.40% overall 30-day return rate
+                    and found meaningful associations between returns and
+                    animal type, age, and prior shelter history.
+                </p>
+
+                <p>
+                    The project includes data cleaning, feature engineering,
+                    exploratory analysis, statistical modeling, visualization,
+                    and an interactive Streamlit dashboard.
                 </p>
 
                 <p>
                     <strong>Technologies:</strong>
-                    Python, Pandas, SQL, Streamlit
+                    Python, Pandas, Matplotlib, Statsmodels, Jupyter,
+                    Streamlit, Git, GitHub
                 </p>
 
-                <a
-                    href="https://github.com/mark011062/shelter-return-analysis"
-                    target="_blank"
-                >
-                    View on GitHub
-                </a>
+                <div class="project-links">
+
+                    <a
+                        href="https://shelter-return-analysis.streamlit.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Live Dashboard
+                    </a>
+
+                    <a
+                        href="https://github.com/mark011062/shelter-return-analysis"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View on GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pathwise -->
+            <div class="project-card">
+
+                <h3>Pathwise — Private Learning Assistant</h3>
+
+                <p>
+                    A team-built AI learning platform designed to guide
+                    students through course material without simply giving
+                    them direct answers.
+                </p>
+
+                <p>
+                    Pathwise uses retrieval-augmented generation, curriculum
+                    search, guardrails, and interaction logging to provide
+                    guided learning support while giving instructors and
+                    administrators visibility into student activity.
+                </p>
+
+                <p>
+                    The application includes a React student interface,
+                    administrator dashboard, FastAPI backend, Databricks
+                    Vector Search, AI guardrails, and automated testing.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, FastAPI, React, Vite, LangGraph, Databricks,
+                    Vector Search, RAG, Groq, GitHub, Render
+                </p>
+
+                <div class="project-links">
+
+                    <a
+                        href="https://pathwise-8vr8.onrender.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Live Application
+                    </a>
+
+                    <a
+                        href="https://github.com/Team-Three-Brett-Drashti-Mark/team3-hackathon3"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View on GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Austin Pet Adoption Data Pipeline -->
+            <div class="project-card">
+
+                <h3>Austin Pet Adoption Data Pipeline</h3>
+
+                <p>
+                    An end-to-end data engineering project that transforms
+                    raw Austin Animal Center data into an analytics-ready
+                    dimensional data warehouse.
+                </p>
+
+                <p>
+                    The pipeline handles ingestion, data cleaning, feature
+                    engineering, validation, dimensional modeling, analytical
+                    marts, and machine-learning dataset generation using a
+                    DAG-style workflow.
+                </p>
+
+                <p>
+                    The project also includes a FastAPI service for analytics
+                    and machine-learning predictions, including a model that
+                    predicts whether an animal will be adopted within 30 days.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, PostgreSQL, Pandas, Docker, FastAPI,
+                    Machine Learning, Power BI, Git, GitHub
+                </p>
+
+                <div class="project-links">
+
+                    <a
+                        href="https://github.com/mark011062/Austin-Pet-Adoption"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View on GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- LACP/PACP Deliverable Checker -->
+            <div class="project-card">
+
+                <h3>LACP/PACP Deliverable Checker</h3>
+
+                <p>
+                    A Python desktop application built to automate quality
+                    assurance checks for sewer inspection deliverables.
+                </p>
+
+                <p>
+                    The application validates PACP and LACP inspection data,
+                    checks required database fields, verifies associated
+                    pictures and videos, identifies missing information,
+                    and uses FFprobe to validate video files.
+                </p>
+
+                <p>
+                    The tool combines domain knowledge from sewer inspection
+                    workflows with Python automation to reduce repetitive
+                    manual QA work and improve deliverable consistency.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, Tkinter, Microsoft Access, FFprobe,
+                    Data Validation, Automation, PyInstaller
+                </p>
+
+                <div class="project-links">
+
+                    <a
+                        href="https://github.com/mark011062/LACP_PACP_Deliverable_Checker"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View on GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Media Quality Automation Tool -->
+            <div class="project-card">
+
+                <h3>Media Quality Automation Tool</h3>
+
+                <p>
+                    A Python desktop application that automates video quality
+                    validation and identifies corrupt or problematic MP4 files
+                    before analyst review.
+                </p>
+
+                <p>
+                    The tool uses FFmpeg to validate media files in batches
+                    and provides a Tkinter interface so the process can be
+                    used by non-technical users.
+                </p>
+
+                <p>
+                    The automation reduced a manual media review process from
+                    approximately two hours to about 15 minutes per day while
+                    improving consistency in media quality checks.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, FFmpeg, Tkinter, Automation, PyInstaller
+                </p>
+
+                <div class="project-links">
+
+                    <a
+                        href="https://github.com/mark011062/media-quality-automation-tool"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View on GitHub
+                    </a>
+
+                </div>
+
             </div>
 
         </section>
 
 
+        <!-- Skills Section -->
         <section id="skills">
             <h2>Skills</h2>
 
@@ -105,21 +329,32 @@
                 <span>Excel</span>
                 <span>PostgreSQL</span>
                 <span>ETL</span>
+                <span>Data Modeling</span>
                 <span>Data Quality</span>
                 <span>Data Visualization</span>
+                <span>FastAPI</span>
+                <span>Streamlit</span>
+                <span>Git</span>
+                <span>GitHub</span>
             </div>
         </section>
 
 
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
 
             <p>
                 Interested in working together or talking about data,
-                analytics, criminal justice technology, or animal welfare?
+                analytics, data engineering, criminal justice technology,
+                or animal welfare?
             </p>
 
-            <a href="https://www.linkedin.com" target="_blank">
+            <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 LinkedIn
             </a>
         </section>
@@ -127,12 +362,15 @@
     </main>
 
 
+    <!-- Footer -->
     <footer>
-        <p>© 2026 Mark Young</p>
+        <p>&copy; 2026 Mark Young</p>
     </footer>
 
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
+```
